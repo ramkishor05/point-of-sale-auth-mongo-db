@@ -1,5 +1,5 @@
 
-package com.brijframwork.authorization.model;
+package com.brijframework.authorization.model;
 import java.util.List;
 
 import org.springframework.data.annotation.Reference;
@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-import com.brijframwork.authorization.model.onboarding.EOUserOnBoarding;
+import com.brijframework.authorization.model.onboarding.EOUserOnBoarding;
 
 @Document("USER_ACCOUNT")
 public class EOUserAccount extends EOEntityObject {

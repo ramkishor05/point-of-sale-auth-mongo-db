@@ -1,16 +1,21 @@
-package com.brijframwork.authorization.model.headers;
+package com.brijframework.authorization.model.menus;
 
+import java.util.List;
+
+import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-import com.brijframwork.authorization.model.EOEntityObject;
+import com.brijframework.authorization.model.EOEntityObject;
 
-@Document("HEADER_ITEM")
-public class EOHeaderItem extends EOEntityObject{
+@Document("MENU_GROUP")
+public class EOMenuGroup extends EOEntityObject{
 
 	private static final long serialVersionUID = 1L;
 
 	@Field(name = "IDEN_NO")
+	@Indexed(unique = true)
 	private String idenNo;
 	
 	@Field(name = "TITLE")
@@ -27,6 +32,9 @@ public class EOHeaderItem extends EOEntityObject{
 	
 	@Field(name = "ORDER_SQN")
 	private Integer order;
+	
+	@DBRef
+	private List<EOMenuItem>  menuItemList;
 
 	public String getIdenNo() {
 		return idenNo;
@@ -75,4 +83,20 @@ public class EOHeaderItem extends EOEntityObject{
 	public void setOrder(Integer order) {
 		this.order = order;
 	}
+
+	public List<EOMenuItem> getMenuItemList() {
+		return menuItemList;
+	}
+
+	public void setMenuItemList(List<EOMenuItem> menuItemList) {
+		this.menuItemList = menuItemList;
+	}
+
+	@Override
+	public String toString() {
+		return "EOMenuGroup [id=" + getId() + ", idenNo=" + idenNo + ", title=" + title + ", url=" + url + ", type=" + type
+				+ ", icon=" + icon + ", order=" + order + "]";
+	}
+	
+	
 }

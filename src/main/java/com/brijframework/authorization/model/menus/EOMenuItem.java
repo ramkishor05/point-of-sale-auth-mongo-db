@@ -1,10 +1,10 @@
-package com.brijframwork.authorization.model.menus;
+package com.brijframework.authorization.model.menus;
 
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-import com.brijframwork.authorization.model.EOEntityObject;
+import com.brijframework.authorization.model.EOEntityObject;
 import com.mongodb.lang.NonNull;
 
 @Document("MENU_ITEM")

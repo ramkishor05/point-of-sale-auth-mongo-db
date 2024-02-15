@@ -1,12 +1,12 @@
-package com.brijframwork.authorization.model.headers;
+package com.brijframework.authorization.model.headers;
 
 import org.springframework.data.mongodb.core.index.CompoundIndex;
 import org.springframework.data.mongodb.core.index.CompoundIndexes;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-import com.brijframwork.authorization.model.EOEntityObject;
-import com.brijframwork.authorization.model.EOUserRole;
+import com.brijframework.authorization.model.EOEntityObject;
+import com.brijframework.authorization.model.EOUserRole;
 
 @Document("ROLE_HEADER_ITEM")
 @CompoundIndexes({

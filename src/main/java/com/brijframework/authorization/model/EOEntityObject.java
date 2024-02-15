@@ -1,4 +1,4 @@
-package com.brijframwork.authorization.model;
+package com.brijframework.authorization.model;
 
 import java.io.Serializable;
 import java.util.Date;

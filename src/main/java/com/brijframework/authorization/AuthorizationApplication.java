@@ -1,4 +1,4 @@
-package com.brijframwork.authorization;
+package com.brijframework.authorization;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

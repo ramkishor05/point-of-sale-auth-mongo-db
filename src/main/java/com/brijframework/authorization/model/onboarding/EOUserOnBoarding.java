@@ -1,11 +1,11 @@
-package com.brijframwork.authorization.model.onboarding;
+package com.brijframework.authorization.model.onboarding;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-import com.brijframwork.authorization.model.EOEntityObject;
-import com.brijframwork.authorization.model.EOUserAccount;
-import com.brijframwork.authorization.model.menus.EORoleMenuItem;
+import com.brijframework.authorization.model.EOEntityObject;
+import com.brijframework.authorization.model.EOUserAccount;
+import com.brijframework.authorization.model.menus.EORoleMenuItem;
 
 @Document("USER_ONBOARDING")
 public class EOUserOnBoarding  extends EOEntityObject {

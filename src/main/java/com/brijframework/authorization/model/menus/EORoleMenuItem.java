@@ -1,14 +1,14 @@
 
-package com.brijframwork.authorization.model.menus;
+package com.brijframework.authorization.model.menus;
 import java.util.List;
 
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-import com.brijframwork.authorization.model.EOEntityObject;
-import com.brijframwork.authorization.model.EOUserRole;
-import com.brijframwork.authorization.model.onboarding.EOUserOnBoarding;
+import com.brijframework.authorization.model.EOEntityObject;
+import com.brijframework.authorization.model.EOUserRole;
+import com.brijframework.authorization.model.onboarding.EOUserOnBoarding;
 
 @Document("ROLE_MENU_ITEM")
 public class EORoleMenuItem extends EOEntityObject {
